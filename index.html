@@ -1,134 +1,534 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Heybet Systems | AI Workforce Scheduling &amp; Labor Optimization</title>
-    <meta
-      name="description"
-      content="Heybet Systems turns complex shift management and workforce requirements into mathematically optimized schedules—reducing labor costs, eliminating scheduling errors, and saving management hours."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@420;560;700&family=Newsreader:opsz,wght@6..72,480;6..72,560&display=swap"
-      rel="stylesheet"
-    />
-    <script type="module" crossorigin>(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))i(e);new MutationObserver(e=>{for(const r of e)if(r.type==="childList")for(const o of r.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&i(o)}).observe(document,{childList:!0,subtree:!0});function s(e){const r={};return e.integrity&&(r.integrity=e.integrity),e.referrerPolicy&&(r.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?r.credentials="include":e.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function i(e){if(e.ep)return;e.ep=!0;const r=s(e);fetch(e.href,r)}})();</script>
-    <style rel="stylesheet" crossorigin>:root{--ink: #172033;--muted: #5d6774;--paper: #f6f3ec;--card: #fffcf7;--line: #e4dccf;--copper: #8d4318;--copper-deep: #6d3010;--pine: #1c3f3a;--hero: #121a24;color:var(--ink);background:var(--paper);font-family:Manrope,system-ui,sans-serif;font-size:17px;line-height:1.55}*{box-sizing:border-box}body{margin:0}a{color:inherit}h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:560;letter-spacing:-.02em;line-height:1.12}h1{font-size:clamp(2.35rem,4.2vw,3.65rem);margin:.35rem 0 1rem}h2{font-size:clamp(2rem,3vw,2.8rem);margin:.3rem 0 .8rem}h3{font-size:1.45rem;margin:0 0 .45rem}p{margin:0}.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.1rem 6vw;position:sticky;top:0;background:#f6f3eceb;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:2}.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;font-weight:700}.mark{width:2rem;height:2rem;display:grid;place-items:center;background:var(--hero);color:#f6f3ec;font-size:.72rem;letter-spacing:.04em}nav{display:flex;gap:1.25rem}nav a{text-decoration:none;color:var(--muted);font-size:.95rem}nav a:hover{color:var(--ink)}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:end;padding:4.5rem 6vw 3.5rem;background:radial-gradient(900px 420px at 90% -10%,rgba(141,67,24,.35),transparent 60%),var(--hero);color:#f7f3ea}.kicker{margin:0;text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;font-weight:700;color:#e2b08a}.lead{font-size:1.15rem;max-width:40rem;color:#e7e1d6}.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.6rem}.button{display:inline-block;background:var(--copper);color:#fff;text-decoration:none;padding:.85rem 1.15rem;font-weight:700}.button:hover{background:var(--copper-deep)}.button.ghost{background:transparent;color:#f7f3ea;border:1px solid rgba(247,243,234,.45)}.button.ghost:hover{background:#f7f3ea14}.board{margin:0;background:#1c2633;border:1px solid rgba(255,255,255,.08);padding:1.1rem 1.1rem .9rem}.board figcaption,.scale,.row{display:flex;justify-content:space-between;gap:.75rem}.board figcaption{font-size:.82rem;color:#d9d1c4;margin-bottom:.9rem}.scale{color:#8e98a6;font-size:.75rem;margin-bottom:.45rem;padding-left:5.2rem}.row{align-items:center;margin:.55rem 0}.res{width:4.6rem;font-size:.92rem}.track{position:relative;flex:1;height:2.15rem;background:repeating-linear-gradient(90deg,rgba(255,255,255,.04) 0 25%,transparent 25% 25.4%)}.bar{position:absolute;left:var(--start);width:var(--len);top:.28rem;height:1.6rem;display:grid;place-items:center;font-size:.75rem;font-style:normal;color:#1a140f;font-weight:700}.bar.a{background:#e4b089}.bar.b{background:#f3e2cf}.bar.c{background:#c9834f;color:#fff}.note{margin-top:.85rem;color:#9aa3b0;font-size:.8rem}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;padding:2.5rem 6vw;border-bottom:1px solid var(--line)}.features article{background:var(--card);border:1px solid var(--line);padding:1.3rem 1.3rem 1.45rem}.features span{color:var(--copper);font-weight:700;font-size:.85rem}.features h2{font-size:1.55rem;margin-top:.35rem}.features p,.method p,.about p{color:var(--muted)}.features article:target{outline:2px solid var(--copper);outline-offset:3px}.about,.method{padding:4.5rem 6vw}.about{max-width:46rem}.about h2{max-width:16ch}.method li{background:var(--card);border:1px solid var(--line);padding:1.3rem 1.3rem 1.4rem}.method h2{max-width:16ch}.method ol{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;counter-reset:step}.method li{counter-increment:step}.method li h3:before{content:counter(step,decimal-leading-zero);display:block;color:var(--copper);font-family:Manrope,sans-serif;font-size:.8rem;letter-spacing:.08em;margin-bottom:.7rem}footer{display:flex;justify-content:space-between;gap:1rem;padding:1.2rem 6vw 1.6rem;color:var(--muted);font-size:.92rem;border-top:1px solid var(--line)}footer a{color:var(--copper-deep)}@media(max-width:900px){.hero,.features,.method ol,footer,.top{display:block}.hero{padding-top:2.5rem}.board{margin-top:2rem}.features{padding:1.2rem 6vw}.features article{margin-top:.8rem}.method li{margin-top:.8rem}nav{margin-top:.8rem}.scale{padding-left:0}.row{display:block}.res{display:block;width:auto;margin-bottom:.25rem}footer{display:block}footer a{display:inline-block;margin-top:.45rem}}</style>
-  </head>
-  <body>
-    <header class="top">
-      <a class="brand" href="#top">
-        <span class="mark" aria-hidden="true">HS</span>
-        Heybet Systems
-      </a>
-      <nav>
-        <a href="#features">Features</a>
-        <a href="#how">How it works</a>
-        <a href="#about">About</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1414">
+  <meta name="description" content="ForgeOps is an early-stage production intelligence concept for high-mix manufacturers. It combines explainable AI, simulation, and constraint-based optimization to support better planning decisions.">
+  <meta property="og:title" content="ForgeOps — Production intelligence for complex manufacturing">
+  <meta property="og:description" content="Make the next production decision the right one. A production planning copilot concept for high-mix manufacturing.">
+  <title>ForgeOps — Production intelligence for complex manufacturing</title>
+  <style>
+    :root {
+      --bg: #0b1414;
+      --bg-soft: #101e1d;
+      --panel: #122321;
+      --panel-2: #172a27;
+      --line: rgba(220, 240, 228, .12);
+      --text: #eff6ef;
+      --muted: #a6b8af;
+      --muted-2: #7f958a;
+      --lime: #c7f36b;
+      --mint: #75dfbd;
+      --orange: #f3b77a;
+      --radius: 22px;
+      --max: 1160px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse at 82% 5%, rgba(89, 157, 122, .12), transparent 32rem),
+        radial-gradient(ellipse at 8% 32%, rgba(199, 243, 107, .055), transparent 26rem),
+        var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: 3px solid var(--lime); outline-offset: 4px; }
+    .skip-link { position: absolute; left: 12px; top: -60px; z-index: 99; background: var(--lime); color: #0a1412; padding: 10px 14px; border-radius: 8px; font-weight: 700; }
+    .skip-link:focus { top: 12px; }
+    .wrap { width: min(var(--max), calc(100% - 44px)); margin: 0 auto; }
+    .nav-shell { position: sticky; top: 0; z-index: 30; border-bottom: 1px solid rgba(220,240,228,.08); background: rgba(11,20,20,.82); backdrop-filter: blur(18px); }
+    .nav { height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 760; letter-spacing: -.035em; font-size: 1.13rem; }
+    .brand-mark { display: inline-grid; grid-template-columns: repeat(3, 5px); align-items: end; gap: 3px; width: 29px; height: 29px; padding: 6px; border-radius: 9px; background: var(--lime); }
+    .brand-mark i { display: block; width: 5px; border-radius: 4px; background: #14221a; }
+    .brand-mark i:nth-child(1) { height: 8px; }
+    .brand-mark i:nth-child(2) { height: 13px; }
+    .brand-mark i:nth-child(3) { height: 17px; }
+    .brand small { color: var(--muted-2); font-weight: 600; font-size: .65rem; letter-spacing: .13em; margin-left: 2px; }
+    .nav-links { display: flex; align-items: center; gap: 28px; color: var(--muted); font-size: .88rem; }
+    .nav-links a:hover { color: var(--text); }
+    .nav-cta, .button-primary, .button-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border-radius: 999px; font-size: .9rem; font-weight: 750; transition: transform .2s ease, background .2s ease, border-color .2s ease; }
+    .nav-cta { padding: 10px 16px; color: #102017; background: var(--lime); }
+    .nav-cta:hover, .button-primary:hover, .button-secondary:hover { transform: translateY(-2px); }
+    .hero { padding: 86px 0 76px; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.04fr) minmax(420px, .96fr); gap: 58px; align-items: center; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; padding: 7px 11px; border: 1px solid rgba(199,243,107,.25); border-radius: 999px; color: #ddf5b1; background: rgba(199,243,107,.06); text-transform: uppercase; font-size: .69rem; letter-spacing: .14em; font-weight: 760; }
+    .eyebrow-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 0 4px rgba(199,243,107,.09); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 680px; margin: 22px 0 22px; font-size: clamp(3rem, 5.3vw, 5.15rem); line-height: .99; letter-spacing: -.075em; font-weight: 770; }
+    h1 .accent { color: var(--lime); }
+    .hero-copy { max-width: 570px; color: var(--muted); font-size: 1.08rem; line-height: 1.75; }
+    .hero-copy strong { color: var(--text); font-weight: 650; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 30px; }
+    .button-primary { padding: 14px 19px; background: var(--lime); color: #132117; border: 1px solid var(--lime); }
+    .button-secondary { padding: 14px 19px; border: 1px solid rgba(220,240,228,.2); color: var(--text); background: rgba(255,255,255,.02); }
+    .arrow { font-size: 1.15em; line-height: 1; }
+    .hero-note { margin-top: 22px; display: flex; align-items: center; gap: 10px; font-size: .78rem; color: var(--muted-2); }
+    .hero-note svg { flex: 0 0 auto; color: var(--mint); }
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="kicker">AI Workforce Scheduling &amp; Labor Optimization</p>
-          <h1>AI-Powered Workforce Scheduling &amp; Labor Optimization</h1>
-          <p class="lead">
-            Heybet Systems turns complex shift management and workforce
-            requirements into mathematically optimized schedules—reducing labor
-            costs, eliminating scheduling errors, and saving management hours.
-          </p>
-          <div class="actions">
-            <a class="button" href="mailto:info@heybetsystems.com?subject=Demo%20request">Request a Demo</a>
-            <a class="button ghost" href="#engine">Explore Optimization Engine</a>
+    .visual-wrap { position: relative; min-width: 0; }
+    .visual-glow { position: absolute; inset: 8% 2% -4% 8%; background: rgba(117,223,189,.13); filter: blur(45px); border-radius: 50%; pointer-events: none; }
+    .dashboard { position: relative; padding: 17px; background: linear-gradient(150deg, rgba(26,47,42,.98), rgba(14,29,27,.98)); border: 1px solid rgba(223,244,229,.15); border-radius: 24px; box-shadow: 0 30px 90px rgba(0,0,0,.3); transform: perspective(1200px) rotateY(-3deg) rotateX(1deg); }
+    .dash-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 4px 3px 16px; }
+    .dash-heading { font-weight: 750; font-size: .92rem; letter-spacing: -.02em; }
+    .dash-sub { color: var(--muted-2); font-size: .7rem; margin-top: 2px; }
+    .sample-pill { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; padding: 5px 8px; border-radius: 6px; color: #f8d4a8; background: rgba(243,183,122,.09); border: 1px solid rgba(243,183,122,.19); font-size: .58rem; letter-spacing: .09em; font-weight: 800; }
+    .sample-pill::before { content: ""; width: 5px; height: 5px; background: var(--orange); border-radius: 50%; }
+    .dash-rule { border: 0; border-top: 1px solid var(--line); margin: 0; }
+    .dash-kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; padding: 15px 0; }
+    .kpi { padding: 12px 11px; border-radius: 12px; background: rgba(255,255,255,.035); border: 1px solid rgba(220,240,228,.065); min-width: 0; }
+    .kpi-label { color: var(--muted-2); font-size: .64rem; line-height: 1.4; }
+    .kpi-value { margin-top: 7px; font-size: clamp(1.1rem, 2vw, 1.55rem); font-weight: 770; letter-spacing: -.05em; line-height: 1; }
+    .kpi-note { margin-top: 7px; color: var(--mint); font-size: .6rem; }
+    .schedule-card { padding: 14px; background: rgba(4,13,12,.32); border: 1px solid var(--line); border-radius: 14px; }
+    .schedule-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 13px; }
+    .schedule-head strong { font-size: .74rem; }
+    .schedule-head span { color: var(--muted-2); font-size: .63rem; }
+    .schedule { display: grid; gap: 11px; }
+    .lane { display: grid; grid-template-columns: 72px 1fr; align-items: center; gap: 11px; }
+    .lane-name { color: #b1c4b9; font-size: .65rem; white-space: nowrap; }
+    .lane-track { position: relative; display: flex; height: 24px; gap: 4px; align-items: stretch; border-radius: 5px; background: repeating-linear-gradient(90deg, rgba(220,240,228,.045) 0, rgba(220,240,228,.045) 1px, transparent 1px, transparent 20%); }
+    .bar { display: block; border-radius: 4px; min-width: 6px; height: 100%; }
+    .bar.mint { background: #74dbb4; }
+    .bar.lime { background: #c7f36b; }
+    .bar.blue { background: #75b6d7; }
+    .bar.gold { background: #e5b878; }
+    .bar.dim { background: #597c70; }
+    .dash-legend { display: flex; flex-wrap: wrap; gap: 13px; padding-top: 15px; color: var(--muted-2); font-size: .63rem; }
+    .legend-item { display: inline-flex; gap: 6px; align-items: center; }
+    .legend-color { width: 7px; height: 7px; border-radius: 2px; }
+    .dash-bottom { display: flex; align-items: center; gap: 10px; margin-top: 13px; padding: 11px 12px; background: rgba(117,223,189,.065); border: 1px solid rgba(117,223,189,.13); border-radius: 10px; color: #c9dfd4; font-size: .68rem; }
+    .dash-bottom svg { flex: 0 0 auto; color: var(--mint); }
+    .dash-bottom b { color: var(--text); }
+
+    .signal-bar { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,.015); }
+    .signal-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; }
+    .signal-label { color: var(--muted-2); font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 760; }
+    .signals { display: flex; flex-wrap: wrap; gap: 12px 27px; color: #d5e4d9; font-size: .83rem; font-weight: 620; }
+    .signals span { display: inline-flex; align-items: center; gap: 8px; }
+    .signals i { width: 5px; height: 5px; border-radius: 50%; background: var(--lime); }
+    section { padding: 100px 0; }
+    .section-top { max-width: 720px; margin-bottom: 42px; }
+    .section-kicker { margin-bottom: 13px; color: var(--mint); text-transform: uppercase; letter-spacing: .16em; font-size: .7rem; font-weight: 800; }
+    h2 { margin-bottom: 18px; font-size: clamp(2.1rem, 4vw, 3.55rem); line-height: 1.06; letter-spacing: -.065em; font-weight: 760; }
+    .section-intro { max-width: 650px; color: var(--muted); font-size: 1.02rem; line-height: 1.8; }
+    .problem-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .problem-card { padding: 24px; border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(150deg, rgba(22,41,37,.86), rgba(15,29,27,.68)); }
+    .icon-box { display: grid; place-items: center; width: 43px; height: 43px; margin-bottom: 24px; border-radius: 13px; border: 1px solid rgba(199,243,107,.16); background: rgba(199,243,107,.075); color: var(--lime); }
+    .problem-card h3, .feature-card h3 { margin-bottom: 9px; font-size: 1.05rem; letter-spacing: -.025em; }
+    .problem-card p, .feature-card p { margin-bottom: 0; color: var(--muted); font-size: .88rem; line-height: 1.75; }
+    .statement { margin-top: 18px; padding: 19px 23px; border-left: 2px solid var(--lime); background: rgba(199,243,107,.045); color: #d6e3d8; font-size: .94rem; }
+
+    .product-section { background: linear-gradient(180deg, rgba(255,255,255,.01), transparent 55%); border-top: 1px solid rgba(220,240,228,.035); border-bottom: 1px solid rgba(220,240,228,.035); }
+    .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .feature-card { display: flex; gap: 18px; padding: 25px; border-radius: var(--radius); border: 1px solid var(--line); background: rgba(18,35,33,.7); }
+    .feature-card .icon-box { flex: 0 0 43px; margin: 0; }
+    .feature-tag { display: inline-block; margin-top: 14px; color: #d8f3a6; font-size: .69rem; font-weight: 750; letter-spacing: .055em; }
+    .workflow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; counter-reset: step; }
+    .workflow-step { position: relative; padding: 23px 21px; border-radius: 18px; border: 1px solid var(--line); background: rgba(18,35,33,.62); counter-increment: step; }
+    .workflow-step::before { content: "0" counter(step); display: block; color: var(--lime); font-weight: 800; font-size: .74rem; letter-spacing: .1em; margin-bottom: 25px; }
+    .workflow-step:not(:last-child)::after { content: "↗"; position: absolute; top: 23px; right: 20px; color: var(--muted-2); font-size: 1rem; }
+    .workflow-step h3 { margin-bottom: 9px; font-size: .97rem; }
+    .workflow-step p { color: var(--muted); font-size: .81rem; line-height: 1.7; margin: 0; }
+
+    .claude-section { padding-top: 50px; }
+    .claude-panel { display: grid; grid-template-columns: .92fr 1.08fr; gap: 42px; padding: clamp(28px, 5vw, 54px); align-items: center; border: 1px solid rgba(117,223,189,.17); border-radius: 28px; background: radial-gradient(ellipse at 10% 0%, rgba(117,223,189,.09), transparent 50%), #10201e; }
+    .claude-panel h2 { font-size: clamp(2rem, 3.5vw, 3.2rem); }
+    .claude-panel .section-intro { font-size: .94rem; }
+    .principles { display: grid; gap: 12px; }
+    .principle { display: grid; grid-template-columns: 35px 1fr; gap: 13px; padding: 15px 0; border-bottom: 1px solid var(--line); }
+    .principle:last-child { border-bottom: 0; }
+    .principle-num { color: var(--mint); font-size: .75rem; font-weight: 800; padding-top: 2px; }
+    .principle strong { display: block; margin-bottom: 4px; font-size: .9rem; }
+    .principle p { color: var(--muted); font-size: .81rem; line-height: 1.65; margin: 0; }
+    .guardrail { display: flex; gap: 10px; align-items: flex-start; margin-top: 20px; color: var(--muted-2); font-size: .77rem; line-height: 1.6; }
+    .guardrail svg { flex: 0 0 auto; color: var(--lime); margin-top: 2px; }
+
+    .demo-layout { display: grid; grid-template-columns: .78fr 1.22fr; align-items: start; gap: 34px; }
+    .demo-copy { padding-top: 10px; }
+    .demo-copy .section-intro { font-size: .93rem; }
+    .demo-card { padding: 23px; background: #132522; border: 1px solid var(--line); border-radius: 22px; }
+    .demo-card-top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+    .demo-card-top strong { font-size: .91rem; }
+    .demo-tabs { display: flex; gap: 6px; padding: 4px; border-radius: 10px; background: rgba(0,0,0,.2); }
+    .demo-tabs button { border: 1px solid transparent; border-radius: 7px; padding: 7px 9px; color: var(--muted); background: transparent; font-size: .68rem; cursor: pointer; }
+    .demo-tabs button[aria-pressed="true"] { border-color: rgba(199,243,107,.2); background: rgba(199,243,107,.1); color: var(--lime); }
+    .demo-caption { margin: 14px 0 17px; color: var(--muted-2); font-size: .68rem; }
+    .demo-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .demo-metric { padding: 15px; background: rgba(255,255,255,.035); border: 1px solid rgba(220,240,228,.06); border-radius: 12px; }
+    .demo-metric span { display: block; color: var(--muted-2); font-size: .68rem; line-height: 1.4; min-height: 32px; }
+    .demo-metric strong { display: block; margin-top: 8px; font-size: 1.7rem; letter-spacing: -.06em; line-height: 1; }
+    .demo-metric small { display: block; margin-top: 7px; color: var(--muted); font-size: .65rem; }
+    .tradeoff { margin-top: 15px; padding: 16px; border: 1px solid rgba(117,223,189,.13); border-radius: 13px; background: rgba(117,223,189,.045); }
+    .tradeoff-label { color: var(--mint); font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; }
+    .tradeoff p { margin: 7px 0 0; font-size: .82rem; color: #d0e0d5; line-height: 1.7; }
+    .demo-disclaimer { margin: 13px 0 0; color: var(--muted-2); font-size: .68rem; line-height: 1.6; }
+
+    .roadmap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .roadmap-card { padding: 24px; border-top: 2px solid #4b6b5d; background: rgba(18,35,33,.58); border-radius: 0 0 17px 17px; }
+    .roadmap-card:first-child { border-top-color: var(--lime); }
+    .roadmap-stage { color: var(--mint); font-size: .68rem; text-transform: uppercase; letter-spacing: .12em; font-weight: 800; }
+    .roadmap-card h3 { margin: 13px 0 9px; font-size: 1.02rem; }
+    .roadmap-card p { color: var(--muted); font-size: .82rem; line-height: 1.7; margin: 0; }
+    .truth-note { display: flex; gap: 11px; margin-top: 18px; padding: 17px 19px; border: 1px solid rgba(243,183,122,.16); border-radius: 13px; background: rgba(243,183,122,.045); color: #d8c4ad; font-size: .8rem; line-height: 1.65; }
+    .truth-note svg { flex: 0 0 auto; margin-top: 2px; color: var(--orange); }
+
+    .founder-section { padding-top: 70px; }
+    .founder-card { display: grid; grid-template-columns: 1fr 1.25fr; gap: 40px; align-items: center; padding: 36px; border: 1px solid var(--line); background: linear-gradient(130deg, rgba(24,44,39,.88), rgba(15,29,27,.72)); border-radius: 24px; }
+    .founder-heading { display: flex; align-items: center; gap: 16px; }
+    .avatar { display: grid; flex: 0 0 58px; place-items: center; width: 58px; height: 58px; border-radius: 18px; background: rgba(199,243,107,.11); border: 1px solid rgba(199,243,107,.23); color: var(--lime); font-size: 1.15rem; font-weight: 850; letter-spacing: -.04em; }
+    .founder-name { font-size: 1.3rem; margin: 0 0 3px; letter-spacing: -.04em; }
+    .founder-role { margin: 0; color: var(--muted-2); font-size: .78rem; }
+    .founder-bio { color: var(--muted); font-size: .88rem; line-height: 1.8; margin: 0; }
+    .focus-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 17px; }
+    .focus-tags span { padding: 6px 9px; border: 1px solid var(--line); border-radius: 999px; color: #c4d4c9; font-size: .68rem; }
+
+    .closing { padding: 55px 0 90px; }
+    .closing-inner { position: relative; overflow: hidden; text-align: center; padding: 62px 24px; border-radius: 28px; border: 1px solid rgba(199,243,107,.18); background: radial-gradient(ellipse at 50% -25%, rgba(199,243,107,.13), transparent 60%), #11211e; }
+    .closing-inner h2 { max-width: 720px; margin: 0 auto 16px; }
+    .closing-inner p { max-width: 610px; margin: 0 auto 26px; color: var(--muted); font-size: .95rem; }
+    .closing-inner .button-primary { margin: 0 auto; }
+    .footnote { margin-top: 18px !important; margin-bottom: 0 !important; color: var(--muted-2) !important; font-size: .7rem !important; }
+    footer { padding: 25px 0 33px; border-top: 1px solid var(--line); }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 18px; color: var(--muted-2); font-size: .72rem; }
+    .footer-brand { display: inline-flex; align-items: center; gap: 8px; color: #c7d6cc; font-weight: 760; }
+    .footer-meta { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 15px; }
+    .footer-meta a { color: #b9c9bf; text-decoration: underline; text-decoration-color: rgba(185,201,191,.3); text-underline-offset: 3px; }
+    .footer-meta a:hover { color: var(--lime); }
+
+    @media (max-width: 980px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+      .hero { padding-top: 65px; }
+      .hero-copy { max-width: 670px; }
+      .visual-wrap { max-width: 680px; width: 100%; margin: 0 auto; }
+      .dashboard { transform: none; }
+      .signal-inner { align-items: flex-start; flex-direction: column; gap: 12px; }
+      .claude-panel { grid-template-columns: 1fr; gap: 15px; }
+      .demo-layout { grid-template-columns: 1fr; gap: 24px; }
+      .founder-card { grid-template-columns: 1fr; gap: 23px; }
+    }
+    @media (max-width: 700px) {
+      .wrap { width: min(var(--max), calc(100% - 30px)); }
+      .nav { height: 66px; }
+      .nav-links { display: none; }
+      .brand small { display: none; }
+      .hero { padding: 48px 0 53px; }
+      h1 { font-size: clamp(2.8rem, 13vw, 4.3rem); }
+      .hero-copy { font-size: 1rem; }
+      section { padding: 72px 0; }
+      .problem-grid, .product-grid, .workflow, .roadmap { grid-template-columns: 1fr; }
+      .problem-card { padding: 22px; }
+      .icon-box { margin-bottom: 16px; }
+      .feature-card { padding: 21px; }
+      .workflow-step { padding: 20px; }
+      .workflow-step::before { margin-bottom: 14px; }
+      .workflow-step:not(:last-child)::after { top: 17px; }
+      .claude-section { padding-top: 5px; }
+      .claude-panel { padding: 25px 21px; border-radius: 20px; }
+      .demo-card { padding: 15px; }
+      .demo-metrics { gap: 7px; }
+      .demo-metric { padding: 10px; }
+      .demo-metric strong { font-size: 1.35rem; }
+      .demo-tabs { width: 100%; }
+      .demo-tabs button { flex: 1; }
+      .founder-card { padding: 24px 21px; }
+      .closing { padding: 35px 0 65px; }
+      .closing-inner { padding: 47px 20px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+      .footer-meta { justify-content: flex-start; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="nav-shell">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="ForgeOps home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>forgeops <small>INDUSTRIAL AI</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#problem">The problem</a>
+        <a href="#product">Product</a>
+        <a href="#approach">AI approach</a>
+        <a href="#founder">Founder</a>
+      </div>
+      <a class="nav-cta" href="#demo">Explore the concept <span class="arrow" aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <header class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Production intelligence · Early-stage concept</div>
+          <h1>Make the next production decision <span class="accent">the right one.</span></h1>
+          <p class="hero-copy">ForgeOps is a production-planning copilot concept for high-mix manufacturers. It brings together <strong>constraint-based optimization, simulation and explainable AI</strong> to help teams understand what to produce next, what could slip, and why.</p>
+          <div class="hero-actions">
+            <a class="button-primary" href="#demo">Explore a sample scenario <span class="arrow" aria-hidden="true">↘</span></a>
+            <a class="button-secondary" href="#approach">How the AI works</a>
+          </div>
+          <div class="hero-note">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 19 6v5c0 4.6-3 7.7-7 10-4-2.3-7-5.4-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.6"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Designed for planners who need decisions they can inspect, challenge and trust.
           </div>
         </div>
 
-        <figure class="board" aria-label="Sample optimized schedule">
-          <figcaption>
-            <span>Sample schedule</span>
-            <span>Built from labor constraints</span>
-          </figcaption>
-          <div class="scale" aria-hidden="true">
-            <span>06:00</span><span>10:00</span><span>14:00</span><span>18:00</span>
+        <div class="visual-wrap" aria-label="Illustrative production planning dashboard">
+          <div class="visual-glow"></div>
+          <div class="dashboard">
+            <div class="dash-top">
+              <div><div class="dash-heading">Production overview</div><div class="dash-sub">Weekly plan · Example workspace</div></div>
+              <span class="sample-pill">SAMPLE DATA</span>
+            </div>
+            <hr class="dash-rule">
+            <div class="dash-kpis">
+              <div class="kpi"><div class="kpi-label">Orders in scenario</div><div class="kpi-value">18</div><div class="kpi-note">Example input</div></div>
+              <div class="kpi"><div class="kpi-label">Capacity flagged</div><div class="kpi-value">03</div><div class="kpi-note" style="color:var(--orange)">Review needed</div></div>
+              <div class="kpi"><div class="kpi-label">Plan versions</div><div class="kpi-value">04</div><div class="kpi-note">Compare trade-offs</div></div>
+            </div>
+            <div class="schedule-card">
+              <div class="schedule-head"><strong>Work-centre sequence</strong><span>Illustrative · not live</span></div>
+              <div class="schedule">
+                <div class="lane"><span class="lane-name">Slitting</span><div class="lane-track"><i class="bar mint" style="width:18%"></i><i class="bar blue" style="width:13%"></i><i class="bar lime" style="width:23%"></i><i class="bar gold" style="width:15%"></i><i class="bar dim" style="width:17%"></i></div></div>
+                <div class="lane"><span class="lane-name">Cutting</span><div class="lane-track"><i class="bar blue" style="width:12%"></i><i class="bar mint" style="width:19%"></i><i class="bar gold" style="width:12%"></i><i class="bar lime" style="width:26%"></i><i class="bar dim" style="width:18%"></i></div></div>
+                <div class="lane"><span class="lane-name">Assembly</span><div class="lane-track"><i class="bar gold" style="width:16%"></i><i class="bar lime" style="width:17%"></i><i class="bar blue" style="width:22%"></i><i class="bar mint" style="width:19%"></i></div></div>
+              </div>
+              <div class="dash-legend"><span class="legend-item"><i class="legend-color" style="background:#74dbb4"></i>Job A</span><span class="legend-item"><i class="legend-color" style="background:#75b6d7"></i>Job B</span><span class="legend-item"><i class="legend-color" style="background:#c7f36b"></i>Job C</span><span class="legend-item"><i class="legend-color" style="background:#e5b878"></i>Job D</span></div>
+            </div>
+            <div class="dash-bottom">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/></svg>
+              <span><b>Planning insight:</b> compare due-date risk against setup effort before committing the sequence.</span>
+            </div>
           </div>
-          <div class="row">
-            <span class="res">Shift A</span>
-            <span class="track">
-              <i class="bar a" style="--start: 4%; --len: 28%">6 h</i>
-            </span>
+        </div>
+      </div>
+    </header>
+
+    <div class="signal-bar">
+      <div class="wrap signal-inner">
+        <span class="signal-label">One connected workflow</span>
+        <div class="signals"><span><i></i> Forecast</span><span><i></i> Optimize</span><span><i></i> Explain</span><span><i></i> Improve</span></div>
+      </div>
+    </div>
+
+    <section id="problem">
+      <div class="wrap">
+        <div class="section-top">
+          <div class="section-kicker">The problem</div>
+          <h2>Production is a system.<br>Planning tools often aren't.</h2>
+          <p class="section-intro">In high-mix, make-to-order factories, a small change can ripple across machine setups, labour availability, material use and delivery dates. Teams need more than a static schedule: they need to see the consequences of their choices.</p>
+        </div>
+        <div class="problem-grid">
+          <article class="problem-card">
+            <div class="icon-box" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M4 19V5m0 14h16M7 15l4-5 3 2 5-7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Plans are fragile</h3>
+            <p>Urgent orders, bottlenecks and resource conflicts make a plan outdated before the shift is over.</p>
+          </article>
+          <article class="problem-card">
+            <div class="icon-box" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 9h8M8 13h5M8 17h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+            <h3>Trade-offs stay hidden</h3>
+            <p>A sequence that reduces setup time may put a delivery at risk. The reason behind the decision is rarely visible in one place.</p>
+          </article>
+          <article class="problem-card">
+            <div class="icon-box" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.7"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+            <h3>Know-how is hard to scale</h3>
+            <p>Experienced planners carry valuable tacit knowledge that spreadsheets and disconnected systems cannot easily capture.</p>
+          </article>
+        </div>
+        <div class="statement">The opportunity: help the planner evaluate more options, understand the trade-offs, and keep the final decision in human hands.</div>
+      </div>
+    </section>
+
+    <section id="product" class="product-section">
+      <div class="wrap">
+        <div class="section-top">
+          <div class="section-kicker">What we're building</div>
+          <h2>From raw order data to a plan people can act on.</h2>
+          <p class="section-intro">ForgeOps is designed as a decision-support layer for manufacturing teams, starting with complex electrical-equipment and transformer production where routing, capacity and setup choices interact.</p>
+        </div>
+        <div class="product-grid">
+          <article class="feature-card">
+            <div class="icon-box" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M7 6v12m10-12v12M4 18h16M10 10h4m-4 4h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+            <div><h3>Capacity-aware scheduling</h3><p>Represent orders, routings, work-centre capacity and due dates in one model. Compare feasible plans instead of relying on a single fixed sequence.</p><span class="feature-tag">SCHEDULING · DUE-DATE RISK</span></div>
+          </article>
+          <article class="feature-card">
+            <div class="icon-box" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M5 19V5m0 14h14M8 15l3-4 3 2 4-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18" cy="7" r="1.5" fill="currentColor"/></svg></div>
+            <div><h3>Setup-aware sequencing</h3><p>Make sequence-dependent setup time and material constraints explicit, then quantify how each alternative changes the plan.</p><span class="feature-tag">SEQUENCE · CHANGEOVER COST</span></div>
+          </article>
+          <article class="feature-card">
+            <div class="icon-box" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M4 18V6m0 12h16M7 15h3V9H7v6Zm6 0h3V5h-3v10Zm6 0h2v-4h-2v4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+            <div><h3>Labour-time intelligence</h3><p>Use process and product attributes to develop transparent labour-time estimates, highlight uncertainty and support capacity planning.</p><span class="feature-tag">WORK CONTENT · CAPACITY</span></div>
+          </article>
+          <article class="feature-card">
+            <div class="icon-box" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M12 3a7 7 0 0 0-4 12.7V19h8v-3.3A7 7 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.7"/><path d="M9 22h6m-4-15-1 3h4l-1 3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><h3>An operations copilot</h3><p>Ask questions in plain language, request scenario comparisons, and receive a concise explanation of the constraints and trade-offs behind a recommendation.</p><span class="feature-tag">NATURAL LANGUAGE · TRACEABLE REASONS</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow">
+      <div class="wrap">
+        <div class="section-top">
+          <div class="section-kicker">How it fits</div>
+          <h2>A practical path from question to decision.</h2>
+          <p class="section-intro">The concept is intentionally modular: keep calculations testable, use AI where language and context matter, and make every recommended change reviewable.</p>
+        </div>
+        <div class="workflow">
+          <article class="workflow-step"><h3>Bring the inputs together</h3><p>Orders, product attributes, routings, setup matrices, material availability and shift calendars.</p></article>
+          <article class="workflow-step"><h3>Build a feasible plan</h3><p>A constraint-based engine checks capacity, sequence decisions and agreed planning rules.</p></article>
+          <article class="workflow-step"><h3>Compare scenarios</h3><p>Explore the effects of urgent work, alternative sequences or changed resource assumptions.</p></article>
+          <article class="workflow-step"><h3>Explain and approve</h3><p>Understand why the plan changed, review the evidence and let the planner approve the action.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach" class="claude-section">
+      <div class="wrap">
+        <div class="claude-panel">
+          <div>
+            <div class="section-kicker">AI architecture</div>
+            <h2>Claude explains the plan. The optimizer respects the constraints.</h2>
+            <p class="section-intro">The goal isn't to ask a language model to guess a schedule. Claude would serve as the conversational and reasoning layer around tools that perform explicit calculations, run simulations and return structured evidence.</p>
+            <div class="guardrail"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 19 6v5c0 4.6-3 7.7-7 10-4-2.3-7-5.4-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.6"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Human approval, deterministic constraints and traceable outputs are core design principles—not optional add-ons.</span></div>
           </div>
-          <div class="row">
-            <span class="res">Shift B</span>
-            <span class="track">
-              <i class="bar b" style="--start: 34%; --len: 22%">8 h</i>
-            </span>
+          <div class="principles">
+            <div class="principle"><span class="principle-num">01</span><div><strong>Understand the planning question</strong><p>Claude interprets a request such as “prioritize these orders without exceeding cutting capacity” and turns it into explicit parameters or a clarification request.</p></div></div>
+            <div class="principle"><span class="principle-num">02</span><div><strong>Call the right tools</strong><p>Tool use connects the conversation to structured data checks, a scheduling/optimization model, and simulation when uncertainty needs to be explored.</p></div></div>
+            <div class="principle"><span class="principle-num">03</span><div><strong>Explain the trade-offs</strong><p>Claude summarizes which constraints bind, what changed between scenarios, and where the planner may need to intervene.</p></div></div>
+            <div class="principle"><span class="principle-num">04</span><div><strong>Keep a reviewable trail</strong><p>Inputs, assumptions, model outputs and approvals should be distinguishable so teams can check a recommendation before acting on it.</p></div></div>
           </div>
-          <div class="row">
-            <span class="res">Shift C</span>
-            <span class="track">
-              <i class="bar c" style="--start: 58%; --len: 34%">4 h</i>
-            </span>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo">
+      <div class="wrap demo-layout">
+        <div class="demo-copy">
+          <div class="section-kicker">Sample scenario explorer</div>
+          <h2>Different priorities produce different trade-offs.</h2>
+          <p class="section-intro">A planner shouldn't have to choose between “fastest” and “best” without seeing the consequence. This miniature example illustrates the kind of comparison ForgeOps is intended to support.</p>
+          <p class="section-intro" style="font-size:.82rem">Select a planning priority to update the illustrative output. This is a front-end demonstration, not a live solver or a measured factory result.</p>
+        </div>
+        <div class="demo-card">
+          <div class="demo-card-top"><strong>Scenario comparison</strong><div class="demo-tabs" role="group" aria-label="Select illustrative planning priority"><button type="button" data-mode="balanced" aria-pressed="true">Balanced</button><button type="button" data-mode="delivery" aria-pressed="false">Due dates first</button><button type="button" data-mode="setup" aria-pressed="false">Setup first</button></div></div>
+          <p class="demo-caption" id="scenario-label">Balanced priority · illustrative planning output</p>
+          <div class="demo-metrics" aria-live="polite">
+            <div class="demo-metric"><span>Estimated setup effort</span><strong id="setup-value">26.4 h</strong><small id="setup-note">Balanced trade-off</small></div>
+            <div class="demo-metric"><span>Orders at delivery risk</span><strong id="risk-value">03</strong><small id="risk-note">Requires review</small></div>
+            <div class="demo-metric"><span>Capacity conflicts</span><strong id="conflict-value">02</strong><small id="conflict-note">Flagged for planner</small></div>
           </div>
-          <p class="note">Illustrative view. The engine places shifts from labor time, skills, and limits.</p>
-        </figure>
-      </section>
+          <div class="tradeoff"><div class="tradeoff-label">What this could mean</div><p id="tradeoff-text">A middle-ground plan balances setup effort and delivery risk. The planner can inspect both before selecting a sequence.</p></div>
+          <p class="demo-disclaimer">All values are synthetic and provided only to demonstrate the interface. No production data, customer data or optimization backend is connected to this page.</p>
+        </div>
+      </div>
+    </section>
 
-      <section id="features" class="features">
-        <article>
-          <span>01</span>
-          <h2>Labor Duration Estimation</h2>
-          <p>Predict precise project and task labor hours using historical efficiency data and AI-driven workload forecasting.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h2>Constraint-Based Shift Scheduling</h2>
-          <p>Automate shift scheduling while seamlessly balancing availability, skill sets, overtime limits, and regulatory compliance.</p>
-        </article>
-        <article id="engine">
-          <span>03</span>
-          <h2>Dynamic Optimization Engine</h2>
-          <p>Adapt schedules in real time when unexpected shifts, absences, or workload spikes occur with minimal disruption.</p>
-        </article>
-      </section>
+    <section id="roadmap" class="product-section">
+      <div class="wrap">
+        <div class="section-top">
+          <div class="section-kicker">Build roadmap</div>
+          <h2>Start narrow. Prove value. Expand carefully.</h2>
+          <p class="section-intro">The first milestone is a focused workflow that can be validated with planners—not a promise to replace an entire manufacturing execution system.</p>
+        </div>
+        <div class="roadmap">
+          <article class="roadmap-card"><div class="roadmap-stage">Stage 01 · Scope</div><h3>Define the planning model</h3><p>Specify order fields, resources, setup logic and the key objective for a representative transformer-production workflow.</p></article>
+          <article class="roadmap-card"><div class="roadmap-stage">Stage 02 · Prototype</div><h3>Build a testable decision loop</h3><p>Connect structured inputs with a constraint-based model and a Claude-powered interface for questions and explanations.</p></article>
+          <article class="roadmap-card"><div class="roadmap-stage">Stage 03 · Validate</div><h3>Learn with pilot planners</h3><p>Compare outputs with planner judgement and baseline plans; measure setup effort, schedule stability and delivery-risk visibility before making performance claims.</p></article>
+        </div>
+        <div class="truth-note"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 11v5m0-8h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span><strong>Current status:</strong> early-stage concept and prototype scope. This page does not claim a launched product, paying customers, validated savings or a production deployment.</span></div>
+      </div>
+    </section>
 
-      <section id="about" class="about">
-        <p class="kicker">Company</p>
-        <h2>About Heybet Systems</h2>
-        <p>
-          Heybet Systems is an enterprise software platform specialized in
-          algorithmic workforce scheduling, resource allocation, and labor cost
-          estimation. We help operations, manufacturing, and service teams
-          optimize shift distribution and streamline labor utilization through
-          advanced mathematical models and Claude AI.
-        </p>
-      </section>
+    <section id="founder" class="founder-section">
+      <div class="wrap">
+        <div class="section-top">
+          <div class="section-kicker">Founder perspective</div>
+          <h2>Built from real production-planning questions.</h2>
+        </div>
+        <div class="founder-card">
+          <div class="founder-heading"><div class="avatar" aria-hidden="true">MH</div><div><h3 class="founder-name">Muammer Heybet</h3><p class="founder-role">Founder · Industrial engineering</p></div></div>
+          <div><p class="founder-bio">My work and research interests sit where industrial engineering meets practical manufacturing: production planning, simulation, labour-time estimation and mathematical optimization. ForgeOps grows from a simple observation: useful AI for factories should do more than generate text—it should help people reason about operational constraints and make better-informed decisions.</p><div class="focus-tags"><span>Production planning</span><span>Discrete-event simulation</span><span>Operations research</span><span>Industrial AI</span></div></div>
+        </div>
+      </div>
+    </section>
 
-      <section id="how" class="method">
-        <p class="kicker">How it works</p>
-        <h2>From constraints to a schedule</h2>
-        <ol>
-          <li>
-            <h3>Data Input</h3>
-            <p>Import operational requirements, employee availability, and task constraints.</p>
-          </li>
-          <li>
-            <h3>AI &amp; Algorithmic Analysis</h3>
-            <p>Our Claude-powered engine processes complex natural language shift constraints and historical labor metrics.</p>
-          </li>
-          <li>
-            <h3>Optimized Schedule Output</h3>
-            <p>Generate error-free, cost-efficient schedules and duration estimates in seconds.</p>
-          </li>
-        </ol>
-      </section>
-    </main>
+    <section class="closing" id="contact">
+      <div class="wrap">
+        <div class="closing-inner">
+          <div class="section-kicker">A focused first step</div>
+          <h2>Better planning starts with a better question.</h2>
+          <p>ForgeOps is being shaped around one practical goal: give production teams clearer options, explainable trade-offs and more confidence in the next decision.</p>
+          <button class="button-primary" id="contact-button" type="button">Contact the founder <span class="arrow" aria-hidden="true">↗</span></button>
+          <p class="footnote">Early-stage product concept · Balıkesir, Türkiye</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-      <span>© 2026 Heybet Systems. Workforce Management &amp; Schedule Optimization Solutions.</span>
-      <a href="mailto:info@heybetsystems.com">info@heybetsystems.com</a>
-    </footer>
-  </body>
+  <footer>
+    <div class="wrap footer-inner">
+      <a class="footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span> ForgeOps</a>
+      <div class="footer-meta"><span>© <span id="year">2026</span> ForgeOps concept</span><span>Independent project; not affiliated with any employer or university.</span></div>
+    </div>
+  </footer>
+
+  <script>
+    // Before publishing, replace this value with the email address you want visitors to use.
+    const CONTACT_EMAIL = "REPLACE_WITH_YOUR_EMAIL";
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const scenarios = {
+      balanced: {
+        label: "Balanced priority · illustrative planning output",
+        setup: "26.4 h", setupNote: "Balanced trade-off", risk: "03", riskNote: "Requires review", conflicts: "02", conflictNote: "Flagged for planner",
+        text: "A middle-ground plan balances setup effort and delivery risk. The planner can inspect both before selecting a sequence."
+      },
+      delivery: {
+        label: "Due-date-first priority · illustrative planning output",
+        setup: "30.8 h", setupNote: "More changeovers accepted", risk: "01", riskNote: "Lower delivery exposure", conflicts: "03", conflictNote: "Capacity needs attention",
+        text: "The plan protects more delivery dates by accepting extra setup effort. A planner would review the increased changeovers and capacity pressure."
+      },
+      setup: {
+        label: "Setup-first priority · illustrative planning output",
+        setup: "21.7 h", setupNote: "Less setup effort", risk: "05", riskNote: "Higher delivery exposure", conflicts: "01", conflictNote: "Fewer flagged conflicts",
+        text: "The sequence reduces setup effort, but more orders may be exposed to delivery risk. This is a trade-off to review—not an automatic recommendation."
+      }
+    };
+    document.querySelectorAll("[data-mode]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const data = scenarios[button.dataset.mode];
+        if (!data) return;
+        document.querySelectorAll("[data-mode]").forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
+        document.getElementById("scenario-label").textContent = data.label;
+        document.getElementById("setup-value").textContent = data.setup;
+        document.getElementById("setup-note").textContent = data.setupNote;
+        document.getElementById("risk-value").textContent = data.risk;
+        document.getElementById("risk-note").textContent = data.riskNote;
+        document.getElementById("conflict-value").textContent = data.conflicts;
+        document.getElementById("conflict-note").textContent = data.conflictNote;
+        document.getElementById("tradeoff-text").textContent = data.text;
+      });
+    });
+    document.getElementById("contact-button").addEventListener("click", () => {
+      if (!CONTACT_EMAIL || CONTACT_EMAIL === "REPLACE_WITH_YOUR_EMAIL") {
+        alert("Before publishing, edit index.html and replace CONTACT_EMAIL with your real contact email address.");
+        return;
+      }
+      window.location.href = "mailto:" + CONTACT_EMAIL;
+    });
+  </script>
+</body>
 </html>
